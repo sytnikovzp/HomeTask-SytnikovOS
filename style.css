@@ -1,0 +1,12 @@
+.navbar-logo {
+  display: inline-block;
+  float: right;
+}
+
+.main-menu {
+  float: left;
+}
+
+.top-menu li{
+  display: inline-block;
+}
