@@ -1,11 +1,93 @@
-.navbar-logo {
+nav ul {
+  height: 70px;
+}
+
+nav ul li {
+  height: inherit;
+  display: inline-block;
+  flex: 0 0 1;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+nav ul li:first-child {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+nav ul li:not(:last-child){
+  margin-right: 20px;
+  padding-top: 30px;
+}
+
+nav ul li:last-child {
+  justify-content: flex-end;
+  margin-right: 100px;
   float: right;
 }
 
-.main-menu {
-  float: left;
+p {
+  text-indent: 30px;
+  text-align: justify;
 }
 
-.top-menu li{
-  display: inline-block;
+.main-title {
+  text-align: center;
+}
+
+.title {
+  text-align: left;
+}
+
+.logo {
+  float: left;
+  margin-left: 30px;
+  margin-right: 25px;
+}
+
+.brandHistory {
+  text-indent: 30px;
+  text-align: left;
+}
+
+.shortDefModel {
+  text-indent: 30px;
+  text-align: left;
+}
+
+.reviews {
+  text-indent: 30px;
+  text-align: left;
+}
+
+.address {
+  text-align: center;
+  float: left;
+  display: block;
+  width: 300px;
+  height: 40px;
+  border: 1px solid gray;
+  margin: 5px;
+}
+
+.email-phone {
+  text-align: center;
+  float: left ;
+  display: block;
+  width: 300px;
+  height: 40px;
+  border: 1px solid gray;
+  margin: 5px;
+}
+
+.url {
+  text-align: center;
+  float: left;
+  display: block;
+  width: 300px;
+  height: 40px;
+  border: 1px solid gray;
+  margin: 5px;
 }
