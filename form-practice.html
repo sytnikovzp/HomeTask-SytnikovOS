@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form example</title>
+  </head>
+  <body>
+    <h1>Form example</h1>
+    <a href="./index.html">Home</a>
+
+    <form>
+      <fieldset>
+        <legend>Личные данные</legend>
+        <div class="elem-form">
+          <label for="name">Имя</label>
+          <input type="text" / id="name">
+        </div>
+        <div class="elev_form">
+          <label for="surname">Фамилия</label>
+          <input type="text" id="surname"/>
+        </div>
+        <div class="elem_form">
+          <label for="birthday">День рождения</label>
+          <input type="datetime-local" name="" id="birthday">
+        </div>
+        <div class="elem-form">
+          <label for="gender">Male</label>
+          <input type="radio" name="gender" id="male">
+        </div>
+        <div class="elem_form">  
+          <label forgender">Female</label>
+          <input type="radio" name="gender" id="female">
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Адресные данные</legend>
+        <label for="city">Город</label>
+        <select name="city" id="city">
+          <option value="zap">Zaporozhye</option>
+          <option value="kyiv">Kyiv</option>
+        </select>
+        <div class="elem-form">
+          <label for="street">Улица</label>
+          <input type="text" id="street">
+        </div>
+        <div class="elem-form"></div>
+          <label for="House">Номер дома</label>
+          <input type="text" id="House">
+        </div>
+        <div class="elem-form">
+          <label for="apartment">Квартира</label>
+          <input type="text" id="apartment">
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Контактные данные</legend>
+        <div class="elem-form">
+          <label for="mphone">Мобильный</label>
+          <input type="tel" name="moblephone" id="mphone">
+        </div>
+        <div class="elem-form">
+          <label for="wphone">Рабочий</label>
+          <input type="tel" name="workphone" id="wphone">
+        </div>
+        <div class="elem-phone">
+          <label for="hphone">Домашний</label>
+          <input type="tel" name="homephone" id="hphone">
+        </div>
+        <div class="elem-phone">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email">
+        </div>
+      </fieldset>
+      <button type="reset">Cancel</button>
+      <button type="submit">Ok</button>
+    </form>
+  </body>
+</html>
