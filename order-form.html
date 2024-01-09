@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order form</title>
+  </head>
+  <body>
+    <a href="/index.html">Go back to main page</a>
+    <label>or</label>
+    <a href="/car-shop.html">Go back to Car-shop page</a>
+    <br />
+    <form>
+      <fieldset>
+        <legend>Personal info</legend>
+        <div class="elem-form">
+          <label for="firstname">First name</label>
+          <input type="text" id="firstname" />
+        </div>
+        <div class="elev_form">
+          <label for="lastname">Last name</label>
+          <input type="text" id="lastname" />
+        </div>
+        <div class="elem_form">
+          <label for="birthday">Birthday</label>
+          <input type="datetime-local" name="bd" id="birthday" />
+        </div>
+        <label>Gender</label>
+        <div class="elem-form">
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="male" />
+          <label for="female">Female</label>
+          <input type="radio" name="gender" id="female" />
+        </div>
+        <div class="elem-form">
+          <label for="driveexperience">Drive experience</label>
+          <select name="drvexp" id="driveexperience">
+            <option value="---" selected>---</option>
+            <option value="1year">1 years</option>
+            <option value="2year">2 years</option>
+            <option value="3year">3 years</option>
+            <option value="5year">5 years</option>
+            <option value="more">More than 5 years...</option>
+          </select>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Contacts</legend>
+        <div class="elem-form">
+          <label for="email">Email</label>
+          <input type="email" id="email" />
+        </div>
+        <div class="elem-form">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" />
+        </div>
+        <div class="elem-form">
+          <label for="address">Address</label>
+          <textarea name="address" id="address" cols="20" rows="5"></textarea>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Car info</legend>
+        <div class="elem-form">
+          <label for="carbrand">Brand</label>
+          <select name="brand" id="carbrand">
+            <option value="---" selected>---</option>
+            <option value="ford">Ford</option>
+            <option value="toyota">Toyota</option>
+            <option value="bmw">BMW</option>
+          </select>
+        </div>
+        <div class="elem-form">
+          <label for="carmodel">Model</label>
+          <select name="brand" id="carmodel">
+            <option value="---" selected>---</option>
+            <option value="fiesta">Ford Fiesta</option>
+            <option value="focus">Ford Focus</option>
+            <option value="camry">Toyota Camry</option>
+            <option value="corolla">Toyota Corolla</option>
+            <option value="x5">BMW X5</option>
+            <option value="e60">BMW E60</option>
+          </select>
+        </div>
+        <div class="elem-form">
+          <label for="usedcar">Used</label>
+          <input type="checkbox" id="usedcar" />
+        </div>
+        <label>Color</label>
+        <div class="elem-form">
+          <label for="red">Red</label>
+          <input type="radio" name="carcolor" id="red" checked />
+          <label for="black">Black</label>
+          <input type="radio" name="carcolor" id="black" />
+          <label for="blue">Blue</label>
+          <input type="radio" name="carcolor" id="blue" />
+          <label for="white">White</label>
+          <input type="radio" name="carcolor" id="white" />
+          <label for="grey">Grey</label>
+          <input type="radio" name="carcolor" id="grey" />
+        </div>
+        <div class="elem-form">
+          <label for="carprice">Price</label>
+          <input
+            type="range"
+            name="Price"
+            id="carprice"
+            min="1000"
+            max="9000"
+            step="1000"
+            value="4000"
+            list="money"
+          />
+          <datalist id="money">
+            <option value="1000" label="1000$"></option>
+            <option value="2000" label="2000$"></option>
+            <option value="3000" label="3000$"></option>
+            <option value="4000" label="4000$"></option>
+            <option value="5000" label="5000$"></option>
+            <option value="6000" label="6000$"></option>
+            <option value="7000" label="7000$"></option>
+            <option value="8000" label="8000$"></option>
+          </datalist>
+        </div>
+      </fieldset>
+      <br />
+      <button type="reset">Cancel</button>
+      <button type="submit">Ok</button>
+    </form>
+  </body>
+</html>

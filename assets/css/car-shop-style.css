@@ -72,7 +72,7 @@ p {
   margin: 5px;
 }
 
-.email-phone {
+.contact {
   text-align: center;
   float: left ;
   display: block;
@@ -82,7 +82,7 @@ p {
   margin: 5px;
 }
 
-.url {
+.author {
   text-align: center;
   float: left;
   display: block;
