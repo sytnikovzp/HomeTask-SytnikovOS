@@ -1,0 +1,48 @@
+caption {
+  font-size: 20px;
+  padding: 3px;
+  color: red;
+}
+
+caption::after {
+  content: "#05";
+  color: darkorchid;
+}
+
+table,
+thead,
+tbody {
+  border: 3px solid red;
+  border-collapse: separate;
+  width: 450px;
+}
+
+.tableheader{
+  background-color: moccasin;
+}
+
+th,
+tr,
+td {
+  border: 1px solid blue;
+}
+
+table tr:nth-child(odd) {
+  background-color: darkkhaki;
+}
+
+table tr:nth-child(even) {
+  background-color: lightgray;
+}
+
+tbody td {
+  text-align: center;
+}
+
+.numbplayer {
+  background-color: cyan;
+}
+
+.footer{
+  background-color: lightsalmon;
+}
