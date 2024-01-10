@@ -7,25 +7,25 @@
   </head>
   <body>
     <a href="/index.html">Go back to main page</a>
-    <label>or</label>
+    <span>or</span>
     <a href="/car-shop.html">Go back to Car-shop page</a>
     <br />
     <form>
       <fieldset>
         <legend>Personal info</legend>
         <div class="elem-form">
-          <label for="firstname">First name</label>
-          <input type="text" id="firstname" />
+          <label for="first-name">First name</label>
+          <input type="text" id="first-name" />
         </div>
-        <div class="elev_form">
-          <label for="lastname">Last name</label>
-          <input type="text" id="lastname" />
+        <div class="elem-form">
+          <label for="last-name">Last name</label>
+          <input type="text" id="last-name" />
         </div>
-        <div class="elem_form">
+        <div class="elem-form">
           <label for="birthday">Birthday</label>
-          <input type="datetime-local" name="bd" id="birthday" />
+          <input type="datetime-local" name="birthday" id="birthday" />
         </div>
-        <label>Gender</label>
+        <span>Gender</span>
         <div class="elem-form">
           <label for="male">Male</label>
           <input type="radio" name="gender" id="male" />
@@ -33,8 +33,8 @@
           <input type="radio" name="gender" id="female" />
         </div>
         <div class="elem-form">
-          <label for="driveexperience">Drive experience</label>
-          <select name="drvexp" id="driveexperience">
+          <label for="drive-experience">Drive experience</label>
+          <select name="drv-exp" id="drive-experience">
             <option value="---" selected>---</option>
             <option value="1year">1 years</option>
             <option value="2year">2 years</option>
@@ -62,8 +62,8 @@
       <fieldset>
         <legend>Car info</legend>
         <div class="elem-form">
-          <label for="carbrand">Brand</label>
-          <select name="brand" id="carbrand">
+          <label for="car-brand">Brand</label>
+          <select name="brand" id="car-brand">
             <option value="---" selected>---</option>
             <option value="ford">Ford</option>
             <option value="toyota">Toyota</option>
@@ -71,8 +71,8 @@
           </select>
         </div>
         <div class="elem-form">
-          <label for="carmodel">Model</label>
-          <select name="brand" id="carmodel">
+          <label for="car-model">Model</label>
+          <select name="model" id="car-model">
             <option value="---" selected>---</option>
             <option value="fiesta">Ford Fiesta</option>
             <option value="focus">Ford Focus</option>
@@ -83,28 +83,28 @@
           </select>
         </div>
         <div class="elem-form">
-          <label for="usedcar">Used</label>
-          <input type="checkbox" id="usedcar" />
+          <label for="used-car">Used</label>
+          <input type="checkbox" id="used-car" />
         </div>
-        <label>Color</label>
+        <span>Color</span>
         <div class="elem-form">
           <label for="red">Red</label>
-          <input type="radio" name="carcolor" id="red" checked />
+          <input type="radio" name="car-color" id="red" checked />
           <label for="black">Black</label>
-          <input type="radio" name="carcolor" id="black" />
+          <input type="radio" name="car-color" id="black" />
           <label for="blue">Blue</label>
-          <input type="radio" name="carcolor" id="blue" />
+          <input type="radio" name="car-color" id="blue" />
           <label for="white">White</label>
-          <input type="radio" name="carcolor" id="white" />
+          <input type="radio" name="car-color" id="white" />
           <label for="grey">Grey</label>
-          <input type="radio" name="carcolor" id="grey" />
+          <input type="radio" name="car-color" id="grey" />
         </div>
         <div class="elem-form">
-          <label for="carprice">Price</label>
+          <label for="car-price">Price</label>
           <input
             type="range"
-            name="Price"
-            id="carprice"
+            name="price"
+            id="car-price"
             min="1000"
             max="9000"
             step="1000"
