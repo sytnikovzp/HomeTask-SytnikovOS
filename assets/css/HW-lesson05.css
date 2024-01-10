@@ -17,7 +17,7 @@ tbody {
   width: 450px;
 }
 
-.tableheader{
+thead tr th{
   background-color: moccasin;
 }
 
@@ -39,10 +39,11 @@ tbody td {
   text-align: center;
 }
 
-.numbplayer {
+tbody tr td:first-child {
   background-color: cyan;
 }
 
-.footer{
+tfoot td{
+  text-align: center;
   background-color: lightsalmon;
 }
