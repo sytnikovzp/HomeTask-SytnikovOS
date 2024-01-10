@@ -5,7 +5,7 @@ nav ul {
 nav ul li {
   height: inherit;
   display: inline-block;
-  flex: 0 0 1;
+  flex: 0 0;
 }
 
 nav ul li a {
@@ -60,6 +60,34 @@ p {
 .reviews {
   text-indent: 30px;
   text-align: left;
+}
+
+#table{
+  margin-right: auto; 
+  margin-left: auto;
+}
+
+caption::before {
+  content: "Table#2 ";
+}
+
+table,
+thead,
+tbody {
+  border: 3px solid teal;
+  border-collapse: separate;
+  width: 600px;
+}
+
+th,
+tr,
+td {
+  border: 3px solid teal;
+}
+
+tbody td {
+  text-align: center;
+  font-weight: bold;
 }
 
 .address {
