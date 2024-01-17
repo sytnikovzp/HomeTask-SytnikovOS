@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order form on Flexbox</title>
+    <link rel="stylesheet" href="/assets/css/order-form-flex.css" />
+  </head>
+  <body>
+    <a href="/index.html">Go back to main page</a>
+    <span>or</span>
+    <a href="/car-shop.html">Go back to Car-shop page</a>
+    <br />
+    <div class="container">
+      <div class="header">
+        <h2>Home work for CSS flexbox</h2>
+      </div>
+      <div class="main">
+        <div class="main-form">
+          <form>
+            <fieldset>
+              <legend>Personal info</legend>
+              <div class="elem-form-row">
+                <label for="first-name">First name</label>
+                <input type="text" id="first-name" />
+              </div>
+              <div class="elem-form-row">
+                <label for="Last">Last name</label>
+                <input type="text" id="last-name" />
+              </div>
+              <div class="elem-form-row">
+                <label for="birthday">Birthday</label>
+                <input type="datetime-local" name="birthday" id="birthday" />
+              </div>
+              <div class="elem-form-row">
+                <span>Gender</span>
+                <div>
+                  <label for="male">Male</label>
+                  <input type="radio" name="gender" id="male" />
+                </div>
+                <div>
+                  <label for="female">Female</label>
+                  <input type="radio" name="gender" id="female" />
+                </div>
+              </div>
+              <div class="elem-form-row">
+                <label for="drive-experience">Drive experience</label>
+                <select name="drv-exp" id="drive-experience">
+                  <option value="---" selected>---</option>
+                  <option value="expert">expert</option>
+                  <option value="more-than-10">more than 10</option>
+                  <option value="5-10">5-10</option>
+                  <option value="2-5">2-5</option>
+                  <option value="less-than-2">less than 2</option>
+                  <option value="beginner">beginner</option>
+                </select>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+        <div class="main-form">
+          <form>
+            <fieldset>
+              <legend>Contacts</legend>
+              <div class="elem-form-row">
+                <label for="email">Email</label>
+                <input type="email" id="email" />
+              </div>
+              <div class="elem-form-row">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" />
+              </div>
+              <div class="elem-form-row">
+                <label for="address">Address</label>
+                <textarea
+                  name="address"
+                  id="address"
+                  cols="20"
+                  rows="2"
+                ></textarea>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+        <div class="main-form">
+          <form>
+            <fieldset>
+              <legend>Car info</legend>
+              <div class="elem-form-row">
+                <label for="car-brand">Brand</label>
+                <select name="brand" id="car-brand">
+                  <option value="---" selected>---</option>
+                  <option value="ford">Ford</option>
+                  <option value="toyota">Toyota</option>
+                  <option value="bmw">BMW</option>
+                </select>
+              </div>
+              <div class="elem-form-row">
+                <label for="car-model">Model</label>
+                <select name="model" id="car-model">
+                  <option value="---" selected>---</option>
+                  <option value="fiesta">Ford Fiesta</option>
+                  <option value="focus">Ford Focus</option>
+                  <option value="camry">Toyota Camry</option>
+                  <option value="corolla">Toyota Corolla</option>
+                  <option value="x5">BMW X5</option>
+                  <option value="e60">BMW E60</option>
+                </select>
+              </div>
+              <div class="elem-form-row">
+                <div>
+                  <label for="used-car">Used</label>
+                  <input type="checkbox" id="used-car" />
+                </div>
+              </div>
+              <div class="elem-form-row">
+                <label for="red">Red</label>
+                <input type="radio" name="car-color" id="red" />
+                <label for="black">Black</label>
+                <input type="radio" name="car-color" id="black" />
+                <label for="blue">Blue</label>
+                <input type="radio" name="car-color" id="blue" />
+                <label for="white">White</label>
+                <input type="radio" name="car-color" id="white" />
+                <label for="grey">Grey</label>
+                <input type="radio" name="car-color" id="grey" />
+              </div>
+              <div class="elem-form-row"><span>Price</span></div>
+              <div class="elem-form-row">
+                <input
+                  type="range"
+                  name="price"
+                  id="car-price"
+                  min="10"
+                  max="90"
+                  step="10"
+                  value="50"
+                  list="money"
+                />
+              </div>
+              <div class="elem-form-row">
+                <datalist id="money">
+                  <option value="10" label="10"></option>
+                  <option value="20" label="20"></option>
+                  <option value="30" label="30"></option>
+                  <option value="40" label="40"></option>
+                  <option value="50" label="50"></option>
+                  <option value="60" label="60"></option>
+                  <option value="70" label="70"></option>
+                  <option value="80" label="80"></option>
+                </datalist>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="button">
+          <button type="reset">Cancel</button>
+        </div>
+        <div class="button">
+          <button type="submit">Ok</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
